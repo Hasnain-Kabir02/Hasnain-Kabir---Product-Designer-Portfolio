@@ -29,15 +29,30 @@ const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ project, onClose }) => 
               <span className="text-slate-300">/</span>
               <span className="text-xs font-bold text-slate-900 uppercase tracking-widest">{project.title}</span>
           </div>
-          <button 
-            onClick={onClose}
-            className="flex items-center space-x-2 px-4 py-2 hover:bg-slate-100 rounded-lg transition-colors text-slate-900 font-bold text-sm uppercase"
-          >
-            <span>Close</span>
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </button>
+          <div className="flex items-center space-x-4">
+            {project.figmaUrl && (
+              <a 
+                href={project.figmaUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hidden md:flex items-center space-x-2 px-4 py-2 bg-slate-900 text-white hover:bg-emerald-600 rounded-lg transition-colors font-bold text-xs uppercase tracking-widest"
+              >
+                <span>View Figma File</span>
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
+            )}
+            <button 
+              onClick={onClose}
+              className="flex items-center space-x-2 px-4 py-2 hover:bg-slate-100 rounded-lg transition-colors text-slate-900 font-bold text-sm uppercase"
+            >
+              <span>Close</span>
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
 
@@ -50,6 +65,22 @@ const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ project, onClose }) => 
           <p className="text-2xl md:text-3xl text-slate-500 font-medium leading-tight max-w-3xl">
             {project.subtitle}
           </p>
+          
+          {project.figmaUrl && (
+            <div className="mt-10 md:hidden">
+              <a 
+                href={project.figmaUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center space-x-2 px-6 py-4 bg-slate-900 text-white hover:bg-emerald-600 rounded-xl transition-all font-bold text-sm uppercase tracking-widest"
+              >
+                <span>Open Figma Project</span>
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
+            </div>
+          )}
         </header>
 
         {/* Executive Summary Grid */}
@@ -119,12 +150,27 @@ const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ project, onClose }) => 
         {/* Next Step / Footer */}
         <div className="mt-48 pt-24 border-t border-slate-100 text-center">
             <h4 className="text-4xl font-black text-slate-900 mb-8">Next Case Study?</h4>
-            <button 
-                onClick={onClose}
-                className="px-12 py-5 bg-slate-900 text-white font-black rounded-lg hover:bg-emerald-600 transition-all uppercase tracking-widest text-sm"
-            >
-                Back to Index
-            </button>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <button 
+                  onClick={onClose}
+                  className="w-full sm:w-auto px-12 py-5 bg-slate-900 text-white font-black rounded-lg hover:bg-emerald-600 transition-all uppercase tracking-widest text-sm"
+              >
+                  Back to Index
+              </button>
+              {project.figmaUrl && (
+                <a 
+                  href={project.figmaUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full sm:w-auto px-12 py-5 border-2 border-slate-900 text-slate-900 font-black rounded-lg hover:bg-slate-50 transition-all uppercase tracking-widest text-sm flex items-center justify-center space-x-2"
+                >
+                  <span>View on Figma</span>
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+              )}
+            </div>
         </div>
       </article>
     </div>

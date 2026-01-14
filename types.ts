@@ -9,6 +9,7 @@ export interface CaseStudy {
   outcome: string;
   tags: string[];
   imageUrl: string;
+  figmaUrl?: string;
   details: {
     research: string;
     design: string;

@@ -5,7 +5,7 @@ export const CASE_STUDIES: CaseStudy[] = [
   {
     id: 'grameen-go',
     title: 'GrameenGo Service Ecosystem',
-    subtitle: 'Standardizing digital logistics for 200k+ rural users.',
+    subtitle: 'A microfinance accessibility platform enabling SME entrepreneurs to secure loans from microfinance institutions.',
     problem: 'Digital service delivery was fragmented across multiple legacy platforms, leading to high drop-off rates and increased operational support costs in rural hubs.',
     role: 'Lead UX Designer & Product Owner',
     process: [
@@ -17,6 +17,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     outcome: 'Unified the service delivery logic into a single modular framework. Reduced manual support interventions by 45% and improved hub agent productivity by 2.5x.',
     tags: ['Product Ownership', 'Service Design', 'Enterprise UI'],
     imageUrl: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1200',
+    figmaUrl: 'https://load-gills-96877185.figma.site/',
     details: {
       research: 'Conducted longitudinal studies with field agents. Discovered that 70% of "user errors" were actually due to inconsistent feedback loops between the API latency and the UI state.',
       design: 'Engineered a "state-aware" UI system that provided immediate optimistic feedback, specifically optimized for high-latency 3G environments common in rural areas.',
@@ -38,6 +39,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     outcome: 'Deployed a real-time visualization layer over the central database. Reduced decision-making cycles from 7 days (report-based) to 15 minutes (dashboard-based).',
     tags: ['Data Visualization', 'B2B Product', 'Decision UX'],
     imageUrl: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200',
+    figmaUrl: 'https://www.figma.com/@hasnain_kabir02',
     details: {
       research: 'Identified that "Total Yield" was a vanity metric; managers actually needed "Yield Variance by Transit Time" to optimize logistics.',
       design: 'Developed a custom visualization component library focused on high-density information display without cognitive overload.',
