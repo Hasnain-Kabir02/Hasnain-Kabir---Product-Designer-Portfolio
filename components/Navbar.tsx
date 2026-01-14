@@ -32,7 +32,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, activeSection }) => {
             </button>
           ))}
           <a 
-            href="mailto:contact@hasnain.me"
+            href="mailto:hasnainkabir16@gmail.com"
             className="px-5 py-2.5 bg-slate-900 text-white text-sm font-medium rounded-full hover:bg-slate-800 transition-colors shadow-sm"
           >
             Hire Me

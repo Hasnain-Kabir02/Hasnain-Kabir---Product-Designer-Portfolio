@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
         </p>
 
         <a 
-          href="mailto:contact@hasnain.me"
+          href="mailto:hasnainkabir16@gmail.com"
           className="inline-block px-12 py-6 bg-slate-900 text-white font-black rounded-xl hover:bg-emerald-600 transition-all text-xl uppercase tracking-widest shadow-2xl shadow-slate-200"
         >
           Email Hasnain
@@ -27,17 +27,30 @@ const Footer: React.FC = () => {
           </div>
 
           <div className="flex items-center space-x-12">
-            {['LinkedIn', 'GitHub', 'Figma'].map(link => (
-                <a 
-                    key={link} 
-                    href={`https://${link.toLowerCase()}.com`} 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="text-xs font-black uppercase tracking-widest text-slate-900 hover:text-emerald-600 transition-colors"
-                >
-                    {link}
-                </a>
-            ))}
+            <a 
+                href="https://www.linkedin.com/in/hasnain-muhammad-kabir-3641a1231/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-xs font-black uppercase tracking-widest text-slate-900 hover:text-emerald-600 transition-colors"
+            >
+                LinkedIn
+            </a>
+            <a 
+                href="https://github.com" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-xs font-black uppercase tracking-widest text-slate-900 hover:text-emerald-600 transition-colors"
+            >
+                GitHub
+            </a>
+            <a 
+                href="https://www.figma.com/@hasnain_kabir02" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-xs font-black uppercase tracking-widest text-slate-900 hover:text-emerald-600 transition-colors"
+            >
+                Figma
+            </a>
           </div>
 
           <div className="text-slate-300 text-[10px] font-black uppercase tracking-widest">

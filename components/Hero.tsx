@@ -38,7 +38,7 @@ const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
                     </svg>
                   </button>
                   <a 
-                    href="mailto:contact@hasnain.me"
+                    href="mailto:hasnainkabir16@gmail.com"
                     className="px-8 py-4 bg-white text-slate-900 font-bold border border-slate-200 rounded-lg hover:border-slate-900 transition-all"
                   >
                     Contact
