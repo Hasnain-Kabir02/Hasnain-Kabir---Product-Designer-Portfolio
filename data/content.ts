@@ -39,7 +39,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     outcome: 'Deployed a real-time visualization layer over the central database. Reduced decision-making cycles from 7 days (report-based) to 15 minutes (dashboard-based).',
     tags: ['Data Visualization', 'B2B Product', 'Decision UX'],
     imageUrl: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200',
-    figmaUrl: 'https://www.figma.com/@hasnain_kabir02',
+    figmaUrl: 'https://foam-thaw-10181887.figma.site/',
     details: {
       research: 'Identified that "Total Yield" was a vanity metric; managers actually needed "Yield Variance by Transit Time" to optimize logistics.',
       design: 'Developed a custom visualization component library focused on high-density information display without cognitive overload.',
